@@ -1,14 +1,12 @@
-import type { MetadataRoute } from 'next';
-
-export default function manifest(): MetadataRoute.Manifest {
+export default function manifest() {
   return {
     name: 'Океан Тренажер',
     short_name: 'Океан',
     description: 'Тренажер меню и стандартов сервиса ресторана',
     start_url: '/',
-    display: 'standalone', // Именно это убирает адресную строку браузера
+    display: 'standalone',
     background_color: '#ffffff',
-    theme_color: '#0f172a', // Цвет верхней панели телефона (статус-бара)
+    theme_color: '#0f172a',
     icons: [
       {
         src: '/icon-192x192.png',
@@ -21,5 +19,5 @@ export default function manifest(): MetadataRoute.Manifest {
         type: 'image/png',
       },
     ],
-  };
+  }
 }
